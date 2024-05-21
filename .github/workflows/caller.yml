@@ -7,4 +7,4 @@ jobs:
   cll-workflow:
     uses: ./.github/workflows/ex4.yml
     with:
-      nodeversion: 18
+      nodeversion: 16
