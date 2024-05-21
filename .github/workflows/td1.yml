@@ -14,3 +14,15 @@ jobs:
           node-version: 'lts/*'
       - name: "install dependencies"
         run: npm install
+  
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout the repository"
+        uses: actions/checkout@v4
+      - name: "Install Node.JS"
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+      - name: "run testing on our application"
+        run: npm test
