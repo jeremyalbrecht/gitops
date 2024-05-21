@@ -18,6 +18,8 @@ jobs:
       - name: run test
         shell: bash
         run: |
+          echo $NODE_VERSION
+          echo ${{ vars.NODE_VERSION }}
           node -v
           npm install
           npm test
