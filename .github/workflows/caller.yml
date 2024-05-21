@@ -1,0 +1,11 @@
+name: Caller workflow
+
+on:
+  workflow_dispatch
+
+jobs:
+  cll-workflow:
+    runs-on: ubuntu-latest
+    uses: ./.github/workflows/ex4.yml
+    with:
+      nodeversion: 18
